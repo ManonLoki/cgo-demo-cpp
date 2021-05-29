@@ -1,0 +1,16 @@
+defines =
+include_dirs =
+cflags =
+cflags_cc =
+target_out_dir = obj
+target_output_name = demo
+
+build obj/demo.demo.o: cxx ../demo.cc
+
+build demo: link obj/demo.demo.o | ../libs/cgo_demo.dylib
+  ldflags = -L.. -L../libs
+  libs = ../libs/cgo_demo.dylib
+  frameworks =
+  swiftmodules =
+  output_extension = 
+  output_dir = .

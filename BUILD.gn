@@ -1,0 +1,21 @@
+
+# 执行Gn的默认依赖 否则要执行gn 具体的名称
+group("gn_all"){
+    # 依赖
+    deps = [":demo"]
+}
+
+# 构建一个叫demo的可执行文件
+executable("demo"){
+    # 源文件
+    sources = ["demo.cc"]
+
+    # 动态链接库查询路径
+    lib_dirs = [".","./","./libs"]
+
+    # 静态链接库
+    libs = ["./libs/cgo_demo.dylib"]
+
+}
+
+
