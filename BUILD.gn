@@ -13,7 +13,7 @@ executable("demo"){
     # 动态链接库查询路径
     lib_dirs = [".","./","./libs"]
 
-    # 静态链接库
+    # 链接库
     libs = ["./libs/cgo_demo.dylib"]
 
 }

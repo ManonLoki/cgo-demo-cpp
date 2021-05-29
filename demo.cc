@@ -1,14 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-05-29 21:21:39
- * @LastEditTime: 2021-05-29 22:11:27
+ * @LastEditTime: 2021-05-29 22:51:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /cgo-demo-cpp/src/demo.cc
  */
 
 #include <iostream>
-#include "string"
 #include "libs/cgo_demo.h"
 
 int main(int argc, char **argv)
